@@ -32,7 +32,7 @@ module.exports = {
         test: /\.tsx?$/,
         loader: "babel-loader",
         options: {
-          presets: ["@babel/env", "@babel/react"],
+          presets: ["@babel/react", "@babel/typescript", "@babel/env"],
           plugins: ["react-hot-loader/babel"]
         },
         exclude: /node_modules/

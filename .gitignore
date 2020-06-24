@@ -8,6 +8,8 @@
 .DS_Store
 .env
 yarn.lock
+yarn-error.log
+package-lock.json
 
 # webpack bundle analysis
 stats.json

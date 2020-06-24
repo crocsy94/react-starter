@@ -2,9 +2,11 @@ import { CssBaseline } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { Provider } from "react-redux";
 
 import { museosans100, museosans300, museosans500, museosans700, museosans900 } from "../fonts/fonts";
-import App from "./App";
+import App from "./components/App";
+import store from "./store";
 
 const themeInstance = createMuiTheme({
   overrides: {
@@ -25,7 +27,9 @@ const themeInstance = createMuiTheme({
 ReactDOM.render(
   <ThemeProvider theme={themeInstance}>
     <CssBaseline />
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </ThemeProvider>,
   document.getElementById("root"),
 );
