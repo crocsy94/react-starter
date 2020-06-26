@@ -11,3 +11,9 @@ export function decreaseVisitor() {
     type: actionTypes.DECREASE_VISITOR,
   };
 }
+
+export function changeColor() {
+  return {
+    type: actionTypes.CHANGE_COLOR,
+  };
+}

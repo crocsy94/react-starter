@@ -1,10 +1,8 @@
-import { Button } from "@material-ui/core";
 import * as React from "react";
 import { connect } from "react-redux";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 import { IState } from "../../../reducers";
-import Visitors from "../../modules/Visitors";
 import Homepage from "../Homepage";
 import LandingPage from "../Landingpage";
 

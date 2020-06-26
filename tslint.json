@@ -1,6 +1,7 @@
 {
   "extends": ["tslint:recommended", "tslint-react"],
   "rules": {
-    "member-access": false
+    "member-access": false,
+    "object-literal-key-quotes": [true, "as-needed"]
   }
 }

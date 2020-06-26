@@ -18,11 +18,13 @@ class Visitors extends React.Component<IProps> {
   render() {
 
     return (
-      <>
+      <div>
+        Number of visitors today
+        <br />
         <Button onClick={this.props.increaseVisitors}>+ 1</Button>
         {this.props.visitorNumber}
         <Button onClick={this.props.decreaseVisitors}>- 1</Button>
-      </>
+      </div>
     );
   }
 }

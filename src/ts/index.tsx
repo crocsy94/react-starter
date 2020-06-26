@@ -14,7 +14,7 @@ const themeInstance = createMuiTheme({
     MuiCssBaseline: {
       "@global": {
         "@font-face": [museosans100, museosans300, museosans500, museosans700, museosans900],
-        "table": {
+        table: {
           borderSpacing: "0px",
         },
       },

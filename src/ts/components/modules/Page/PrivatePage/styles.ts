@@ -1,7 +1,8 @@
 import { makeStyles } from "@material-ui/core";
+import { IProps } from ".";
 
 export const useStyles = makeStyles({
-  privatePageWrapper: {
-    backgroundColor: "pink",
-  },
+  privatePageWrapper: (props: IProps) => ({
+    backgroundColor: props.color,
+  }),
 });

@@ -1,5 +1,6 @@
 export const INCREASE_VISITOR = "INCREASE_VISITOR";
 export const DECREASE_VISITOR = "DECREASE_VISITOR";
+export const CHANGE_COLOR = "CHANGE_COLOR";
 
 export const AUTH_START = "AUTH_START";
 export const AUTH_FAIL = "AUTH_FAIL";

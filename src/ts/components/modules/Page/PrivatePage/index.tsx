@@ -2,12 +2,13 @@ import * as React from "react";
 
 import { useStyles } from "./styles";
 
-interface IProps {
+export interface IProps {
   children: React.ReactNode;
+  color: string;
 }
 
 const privatePage = (props: IProps) => {
-  const classes = useStyles();
+  const classes = useStyles(props);
 
   return (
     <main className={classes.privatePageWrapper}>

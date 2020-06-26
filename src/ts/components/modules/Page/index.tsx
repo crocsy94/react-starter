@@ -6,6 +6,7 @@ import PrivatePage from "./PrivatePage";
 import PublicPage from "./PublicPage";
 
 interface IProps {
+  colorId: number;
   children: React.ReactNode;
   isAuthenticated: boolean;
 }
@@ -13,6 +14,7 @@ interface IProps {
 class Page extends React.Component<IProps> {
 
   render() {
+    const colorList = ["aqua", "gray", "burlywood", "orange", "yellow"];
 
     if (!this.props.isAuthenticated) {
       return (
@@ -23,7 +25,9 @@ class Page extends React.Component<IProps> {
     }
 
     return (
-      <PrivatePage >
+      <PrivatePage
+        color={colorList[this.props.colorId]}
+      >
         {this.props.children}
       </PrivatePage>
     );
@@ -31,6 +35,7 @@ class Page extends React.Component<IProps> {
 }
 
 const mapStateToProps = (state: IState) => ({
+  colorId: state.visitors.colorId,
   isAuthenticated: state.session.isAuthenticated,
 });
 
