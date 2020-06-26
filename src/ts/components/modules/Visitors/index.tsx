@@ -4,8 +4,8 @@ import { connect } from "react-redux";
 import { Action, AnyAction } from "redux";
 import { ThunkDispatch } from "redux-thunk";
 
-import * as visitorActions from "../../actions/visitors";
-import { IState } from "../../reducers";
+import * as visitorActions from "../../../actions/visitors";
+import { IState } from "../../../reducers";
 
 interface IProps {
   decreaseVisitors: () => Action;
